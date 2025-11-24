@@ -1,0 +1,69 @@
+---
+title: "Introduction to finto"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to finto}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+
+# Introduction
+
+[Finto](https://finto.fi/) is a Finnish thesaurus and ontology service that provides a centralized platform for managing and utilizing controlled vocabularies in various applications, including libraries, archives, and research institutions. It enables seamless integration with linked data. Maintained by the National Library of Finland, Finto enhances interoperability and accessibility of structured metadata across different domains.
+
+To make a simple search Search Concepts by Query Term we use the following.
+
+```{r message = FALSE, warning = FALSE, eval = FALSE}
+library(finto)
+concepts <- search_concepts("sibelius")
+head(concepts)
+```
+
+To get available vocabularies from the Finto Skosmos API we use 
+
+```{r message = FALSE, warning = FALSE, eval = FALSE}
+library(finto)
+vocabularies <- get_vocabularies(lang = "en")
+head(vocabularies)
+```
+
+To retrieve top concepts in a vocabulary
+ 
+```{r message = FALSE, warning = FALSE, eval = FALSE}
+library(finto)
+top_concepts <- get_top_concepts(vocid = "yso", lang = "fi")
+head(top_concepts)
+```
+
+## Retrieving author information
+
+To retrieve author information we need unique identifier of the author which is called asterID
+
+```{r message = FALSE, warning = FALSE, eval = FALSE}
+
+library(finto)
+author_info <- fetch_kanto_info(asteriID = "000094320")
+knitr::kable(author_info,caption = "author info")
+```
+
+
+## Retrieval of profession information
+
+```{r message = FALSE, warning = FALSE, eval = FALSE}
+library(finto)
+profession_info <- fetch_profession_info("http://urn.fi/URN:NBN:fi:au:mts:m3357")
+knitr::kable(profession_info,caption = "author info")
+```
+
+## Retriveal of both author and profession informations
+
+For this we need a tibble 
+```{r message = FALSE, warning = FALSE, eval = FALSE}
+library(finto)
+library(tidyverse)
+input_data <- tibble(author_ID = c("000069536", "000041234", "000057891"))
+full_author_info <- finto::get_kanto(input_data)
+knitr::kable(full_author_info, caption = "Full author Data Frame from kanto")
+```
+

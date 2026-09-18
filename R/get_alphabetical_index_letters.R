@@ -5,8 +5,10 @@
 #' @param lang The language of labels, e.g., "en" or "fi". Optional.
 #' @return A tibble containing the initial letters of the alphabetical index.
 #' @examples
+#' \dontrun{
 #' result <- get_alphabetical_index_letters(vocid = "yso", lang = "fi")
 #' print(result)
+#' }
 #' @export
 get_alphabetical_index_letters <- function(vocid, lang = NULL) {
   # Check if vocid is provided

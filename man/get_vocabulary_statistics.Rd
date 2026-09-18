@@ -18,6 +18,8 @@ A tibble containing counts of concepts, subtypes, and concept groups, with each 
 Get vocabulary statistics as a single tibble containing concepts, subtypes, and concept groups
 }
 \examples{
+\dontrun{
 result <- get_vocabulary_statistics(vocid = "yso", lang = "fi")
 print(result)
+}
 }

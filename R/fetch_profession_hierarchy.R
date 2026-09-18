@@ -7,8 +7,10 @@
 #' @param depth The depth of hierarchy to fetch (default: 3).
 #' @return A data.frame representing the hierarchy.
 #' @examples
+#' \dontrun{
 #' hierarchy_df <- fetch_profession_hierarchy("http://urn.fi/URN:NBN:fi:au:mts:m3357")
 #' print(hierarchy_df)
+#' }
 #' @export
 fetch_profession_hierarchy <- function(concept_uri, vocid = "mts", depth = 3) {
 

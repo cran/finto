@@ -5,8 +5,10 @@
 #' @param lang The search language, e.g., "en" or "fi". Optional.
 #' @return A tibble containing the best matching concept(s) with fields like uri, type, prefLabel, and altLabel.
 #' @examples
+#' \dontrun{
 #' result <- lookup_concept_by_label(vocid = "yso", label = "cat", lang = "en")
 #' print(result)
+#' }
 #' @export
 lookup_concept_by_label <- function(vocid, label, lang = NULL) {
   # Check if vocid and label are provided

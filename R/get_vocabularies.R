@@ -3,8 +3,10 @@
 #' @param lang Language of labels, e.g., "en" or "fi" (default is "fi")
 #' @return A data frame with the vocabulary details: uri, id, and title
 #' @examples
+#' \dontrun{
 #' result <- get_vocabularies(lang = "fi")
 #' print(result)
+#' }
 #' @export
 get_vocabularies <- function(lang = "fi") {
   # Send request to the 'vocabularies' endpoint with the specified language

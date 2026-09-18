@@ -18,6 +18,8 @@ A list containing the vocabulary details such as URI, title, languages, and conc
 Get general information about a specific vocabulary from the Finto Skosmos API
 }
 \examples{
+\dontrun{
 result <- get_vocabulary_info(vocid = "yso", lang = "fi")
 print(result)
+}
 }

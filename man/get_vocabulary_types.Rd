@@ -21,6 +21,8 @@ This function retrieves information about the types (classes) of objects
 in a given Finto/Skosmos vocabulary, using the \verb{/types} endpoint.
 }
 \examples{
+\dontrun{
 types <- get_vocabulary_types("yso", lang = "fi")
 print(types)
+}
 }

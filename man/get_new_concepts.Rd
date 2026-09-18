@@ -22,6 +22,8 @@ A tibble containing the new concepts with URI, label, and creation date.
 Get new concepts in a specific vocabulary from the Finto Skosmos API
 }
 \examples{
+\dontrun{
 result <- get_new_concepts(vocid = "yso", lang = "fi", limit = 10)
 print(result)
+}
 }

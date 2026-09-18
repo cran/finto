@@ -10,8 +10,10 @@
 #' @param offset Offset where to start in the result set, useful for paging. Optional.
 #' @return A tibble containing the search results with fields such as uri, type, prefLabel, and altLabel.
 #' @examples
+#' \dontrun{
 #' search_results <- search_vocabulary_concepts(vocid = "yso", query = "cat", lang = "en")
 #' print(search_results)
+#' }
 #' @export
 search_vocabulary_concepts <- function(vocid, query, lang = NULL, type = NULL, maxhits = NULL, offset = NULL) {
   # Check if vocid and query are provided

@@ -4,8 +4,10 @@
 #' @param lang The language of labels, e.g., "en" or "fi". Optional.
 #' @return A tibble containing concept groups, with fields for URI, prefLabel, and hasMembers.
 #' @examples
+#' \dontrun{
 #' result <- get_concept_groups(vocid = "yso", lang = "fi")
 #' print(result)
+#' }
 #' @export
 get_concept_groups <- function(vocid, lang = NULL) {
   # Check if vocid is provided

@@ -20,6 +20,8 @@ Get the initial letters of the alphabetical index for labels in a specific
 vocabulary from the Finto Skosmos API
 }
 \examples{
+\dontrun{
 result <- get_alphabetical_index_letters(vocid = "yso", lang = "fi")
 print(result)
+}
 }

@@ -4,8 +4,10 @@
 #' @param lang The language of labels to retrieve, e.g., "en" or "fi". Optional.
 #' @return A list containing the vocabulary details such as URI, title, languages, and concept schemes.
 #' @examples
+#' \dontrun{
 #' result <- get_vocabulary_info(vocid = "yso", lang = "fi")
 #' print(result)
+#' }
 #' @export
 get_vocabulary_info <- function(vocid, lang = NULL) {
   # Check if vocid is provided

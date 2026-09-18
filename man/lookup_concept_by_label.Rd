@@ -20,6 +20,8 @@ A tibble containing the best matching concept(s) with fields like uri, type, pre
 Look up concepts by label in a specific vocabulary from the Finto Skosmos API
 }
 \examples{
+\dontrun{
 result <- lookup_concept_by_label(vocid = "yso", label = "cat", lang = "en")
 print(result)
+}
 }

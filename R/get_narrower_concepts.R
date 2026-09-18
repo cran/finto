@@ -9,9 +9,11 @@
 #' @importFrom tibble tibble
 #' @importFrom utils str
 #' @examples
+#' \dontrun{
 #' narrower_concepts <- get_narrower_concepts(vocid = "yso",
 #' uri = "http://www.yso.fi/onto/yso/p690", lang = "fi")
 #' print(narrower_concepts)
+#' }
 #' @export
 get_narrower_concepts <- function(vocid, uri, lang = NULL) {
   # Input validation

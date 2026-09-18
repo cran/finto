@@ -18,6 +18,8 @@ A tibble containing concept groups, with fields for URI, prefLabel, and hasMembe
 Get concept groups for a given vocabulary from the Finto Skosmos API
 }
 \examples{
+\dontrun{
 result <- get_concept_groups(vocid = "yso", lang = "fi")
 print(result)
+}
 }

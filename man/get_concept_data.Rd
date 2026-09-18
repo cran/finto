@@ -18,6 +18,8 @@ A tibble containing the RDF data for the concept.
 Get RDF data for a specific concept from the Finto Skosmos API
 }
 \examples{
+\dontrun{
 concept_data <- get_concept_data(uri = "http://www.yso.fi/onto/afo/")
 print(concept_data)
+}
 }

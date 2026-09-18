@@ -5,8 +5,10 @@
 #' @param concept_uri The URI of the concept to fetch.
 #' @return A tibble containing the full metadata.
 #' @examples
+#' \dontrun{
 #' metadata <- fetch_profession_info("http://urn.fi/URN:NBN:fi:au:mts:m3357")
 #' print(metadata)
+#' }
 #' @export
 fetch_profession_info <- function(concept_uri) {
 

@@ -16,6 +16,8 @@ A tibble containing the URI, label, and superclass for each type.
 Get information about the types (classes) of objects in all vocabularies from the Finto Skosmos API
 }
 \examples{
+\dontrun{
 result <- get_types(lang = "fi")
 print(result)
+}
 }

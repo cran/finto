@@ -9,8 +9,10 @@
 #' @importFrom tibble tibble
 #' @importFrom dplyr bind_rows
 #' @examples
+#' \dontrun{
 #' mappings_data <- get_mappings(vocid = "yso", uri = "http://www.yso.fi/onto/yso/p22922", lang = "fi")
 #' print(mappings_data)
+#' }
 #' @export
 get_mappings <- function(vocid, uri, lang = NULL) {
   # Construct the base URL for the API request

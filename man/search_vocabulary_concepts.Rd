@@ -33,6 +33,8 @@ A tibble containing the search results with fields such as uri, type, prefLabel,
 Search for concepts and collections in a specific vocabulary from the Finto Skosmos API
 }
 \examples{
+\dontrun{
 search_results <- search_vocabulary_concepts(vocid = "yso", query = "cat", lang = "en")
 print(search_results)
+}
 }

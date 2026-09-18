@@ -9,8 +9,10 @@
 #' @importFrom tibble tibble
 #' @importFrom dplyr add_row
 #' @examples
+#' \dontrun{
 #' hierarchy <- get_hierarchy(vocid = "yso", uri = "http://www.yso.fi/onto/yso/p24489", lang = "fi")
 #' print(hierarchy)
+#' }
 #' @export
 get_hierarchy <- function(vocid, uri, lang = NULL) {
   # Construct the base URL for the API request

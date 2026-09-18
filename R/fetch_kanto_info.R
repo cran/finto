@@ -8,8 +8,10 @@
 #' @importFrom stats na.omit
 #' @return A tibble containing the RDF data for the concept.
 #' @examples
+#' \dontrun{
 #' concept_data <- fetch_kanto_info(asteriID = "000094320")
 #' print(concept_data)
+#' }
 #' @export
 fetch_kanto_info <- function(asteriID, format = "application/json") {
 

@@ -4,8 +4,10 @@
 #' @return A tibble containing the URI, label, and superclass for each type.
 #' @import tibble
 #' @examples
+#' \dontrun{
 #' result <- get_types(lang = "fi")
 #' print(result)
+#' }
 #' @export
 get_types <- function(lang = NULL) {
   # Set up parameters

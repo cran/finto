@@ -20,6 +20,8 @@ A tibble containing the hierarchical context (broader, narrower, prefLabel, etc.
 Get the hierarchical context for a specific concept from the Finto Skosmos API
 }
 \examples{
+\dontrun{
 hierarchy <- get_hierarchy(vocid = "yso", uri = "http://www.yso.fi/onto/yso/p24489", lang = "fi")
 print(hierarchy)
+}
 }

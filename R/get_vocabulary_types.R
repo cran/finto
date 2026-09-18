@@ -9,8 +9,10 @@
 #' @return A tibble with one row per type, typically containing columns
 #'   `uri`, `label`, and (optionally) `superclass`.
 #' @examples
+#' \dontrun{
 #' types <- get_vocabulary_types("yso", lang = "fi")
 #' print(types)
+#' }
 #' @export
 get_vocabulary_types <- function(vocid, lang = NULL) {
   # Construct the /types endpoint URL

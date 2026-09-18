@@ -5,9 +5,11 @@
 #' @return A tibble containing the URI, preferred label (`prefLabel`), alternative labels (`altLabel`), and hidden labels (`hiddenLabel`) for the concept.
 #' @import tibble
 #' @examples
+#' \dontrun{
 #' labeles <- get_concept_labels(uri = "http://www.yso.fi/onto/koko/p91024",
 #' lang = "fi")
 #' print(labeles)
+#' }
 #' @export
 get_concept_labels <- function(uri, lang = NULL) {
   # Check if uri is provided

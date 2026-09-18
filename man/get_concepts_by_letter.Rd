@@ -20,6 +20,8 @@ A tibble containing concepts with labels starting with the given letter.
 Get concepts starting with a specific letter in the alphabetical index for a given vocabulary
 }
 \examples{
+\dontrun{
 result <- get_concepts_by_letter(vocid = "yso", letter = "A", lang = "fi")
 print(result)
+}
 }

@@ -13,8 +13,10 @@
 #' @param unique Boolean flag to return each concept only once. Optional.
 #' @return A data frame containing search results with columns: `uri`, `type`, `prefLabel`, `altLabel`, `hiddenLabel`, `lang`, and `vocab`.
 #' @examples
+#' \dontrun{
 #' concepts <- search_concepts(query = "sibelius", lang = "fi")
 #' print(concepts)
+#' }
 #' @export
 search_concepts <- function(query, lang = NULL, labellang = NULL, vocab = NULL, type = NULL,
                             parent = NULL, group = NULL, maxhits = NULL, offset = NULL,

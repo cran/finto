@@ -20,7 +20,9 @@ A tibble containing the related concepts (prefLabel and uri) for the specified c
 Get related concepts for a specific concept from the Finto Skosmos API
 }
 \examples{
+\dontrun{
 related <- get_related_concepts(vocid = "yso",
 uri = "http://www.yso.fi/onto/yso/p24489", lang = "fi")
 print(related)
+}
 }

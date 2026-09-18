@@ -20,6 +20,8 @@ A tibble containing the URI, label, topConceptOf, notation, and hasChildren for 
 Get top concepts of a specific vocabulary from the Finto Skosmos API
 }
 \examples{
+\dontrun{
 result <- get_top_concepts(vocid = "yso", lang = "fi")
 print(result)
+}
 }

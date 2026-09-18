@@ -6,8 +6,10 @@
 #' @param limit Maximum number of concepts to return. Optional.
 #' @return A tibble containing the new concepts with URI, label, and creation date.
 #' @examples
+#' \dontrun{
 #' result <- get_new_concepts(vocid = "yso", lang = "fi", limit = 10)
 #' print(result)
+#' }
 #' @export
 get_new_concepts <- function(vocid, lang = NULL, offset = NULL, limit = NULL) {
   # Check if vocid is provided

@@ -5,8 +5,10 @@
 #' @param scheme The concept scheme to retrieve top concepts from. Optional.
 #' @return A tibble containing the URI, label, topConceptOf, notation, and hasChildren for each top concept.
 #' @examples
+#' \dontrun{
 #' result <- get_top_concepts(vocid = "yso", lang = "fi")
 #' print(result)
+#' }
 #' @export
 get_top_concepts <- function(vocid, lang = NULL, scheme = NULL) {
   # Check if vocid is provided

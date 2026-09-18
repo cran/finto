@@ -16,6 +16,8 @@ A data frame with the vocabulary details: uri, id, and title
 Get available vocabularies from the Finto Skosmos API
 }
 \examples{
+\dontrun{
 result <- get_vocabularies(lang = "fi")
 print(result)
+}
 }

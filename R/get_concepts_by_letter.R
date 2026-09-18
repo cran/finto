@@ -5,8 +5,10 @@
 #' @param lang The language of labels, e.g., "en" or "fi". Optional.
 #' @return A tibble containing concepts with labels starting with the given letter.
 #' @examples
+#' \dontrun{
 #' result <- get_concepts_by_letter(vocid = "yso", letter = "A", lang = "fi")
 #' print(result)
+#' }
 #' @export
 get_concepts_by_letter <- function(vocid, letter, lang = NULL) {
   # Check if vocid and letter are provided

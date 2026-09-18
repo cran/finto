@@ -20,6 +20,8 @@ A data.frame representing the hierarchy.
 This function retrieves broader/narrower relationships and constructs a hierarchical structure.
 }
 \examples{
+\dontrun{
 hierarchy_df <- fetch_profession_hierarchy("http://urn.fi/URN:NBN:fi:au:mts:m3357")
 print(hierarchy_df)
+}
 }

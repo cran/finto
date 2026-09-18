@@ -16,6 +16,8 @@ A tibble containing the full metadata.
 This function queries the Finto API for a given concept URI and extracts all relevant metadata fields.
 }
 \examples{
+\dontrun{
 metadata <- fetch_profession_info("http://urn.fi/URN:NBN:fi:au:mts:m3357")
 print(metadata)
+}
 }

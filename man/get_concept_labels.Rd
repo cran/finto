@@ -18,7 +18,9 @@ A tibble containing the URI, preferred label (\code{prefLabel}), alternative lab
 Get labels for a specific concept from the Finto Skosmos API and return as a tibble
 }
 \examples{
+\dontrun{
 labeles <- get_concept_labels(uri = "http://www.yso.fi/onto/koko/p91024",
 lang = "fi")
 print(labeles)
+}
 }

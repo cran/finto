@@ -20,7 +20,9 @@ A tibble containing the broader concepts (prefLabel and uri) for the specified c
 Get broader concepts for a specific concept from the Finto Skosmos API
 }
 \examples{
+\dontrun{
 conepts <- get_broader_concepts(vocid = "yso",
 uri = "http://www.yso.fi/onto/yso/p22922", lang = "fi")
 print(conepts)
+}
 }

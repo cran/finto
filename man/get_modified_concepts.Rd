@@ -22,6 +22,8 @@ A tibble containing the modified concepts with URI, label, and modification date
 Get modified concepts in a specific vocabulary from the Finto Skosmos API
 }
 \examples{
+\dontrun{
 result <- get_modified_concepts(vocid = "yso", lang = "fi", limit = 10)
 print(result)
+}
 }

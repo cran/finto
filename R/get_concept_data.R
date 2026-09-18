@@ -5,8 +5,10 @@
 #' @return A tibble containing the RDF data for the concept.
 #' @import tibble
 #' @examples
+#' \dontrun{
 #' concept_data <- get_concept_data(uri = "http://www.yso.fi/onto/afo/")
 #' print(concept_data)
+#' }
 #' @export
 get_concept_data <- function(uri, format = "application/json") {
   # Check if uri is provided

@@ -8,9 +8,11 @@
 #' @importFrom jsonlite fromJSON
 #' @importFrom tibble tibble
 #' @examples
+#' \dontrun{
 #' narrow <- get_narrower_transitive(vocid = "yso",
 #' uri = "http://www.yso.fi/onto/yso/p690", lang = "fi")
 #' print(narrow)
+#' }
 #' @export
 get_narrower_transitive <- function(vocid, uri, lang = NULL) {
   # Construct the base URL for the API request

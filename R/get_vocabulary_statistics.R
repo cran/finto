@@ -5,8 +5,10 @@
 #' @return A tibble containing counts of concepts, subtypes, and concept groups, with each entry in one row.
 #' @importFrom dplyr bind_rows
 #' @examples
+#' \dontrun{
 #' result <- get_vocabulary_statistics(vocid = "yso", lang = "fi")
 #' print(result)
+#' }
 #' @export
 get_vocabulary_statistics <- function(vocid, lang = NULL) {
   # Check if vocid is provided

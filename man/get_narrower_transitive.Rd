@@ -20,7 +20,9 @@ A tibble containing the narrower transitive concepts (prefLabel and uri) for the
 Get narrower transitive concepts for a specific concept from the Finto Skosmos API
 }
 \examples{
+\dontrun{
 narrow <- get_narrower_transitive(vocid = "yso",
 uri = "http://www.yso.fi/onto/yso/p690", lang = "fi")
 print(narrow)
+}
 }

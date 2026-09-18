@@ -20,7 +20,9 @@ A tibble containing the broader transitive concepts (prefLabel and uri) for the 
 Get broader transitive concepts for a specific concept from the Finto Skosmos API
 }
 \examples{
+\dontrun{
 concepts <- get_broader_transitive_concepts(vocid = "yso",
 uri = "http://www.yso.fi/onto/yso/p22922", lang = "fi")
 print(concepts)
+}
 }

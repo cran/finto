@@ -16,6 +16,8 @@ A tibble containing the label statistics for each language, with columns for lan
 Get label statistics by language in a specific vocabulary from the Finto Skosmos API
 }
 \examples{
+\dontrun{
 result <- get_label_statistics(vocid = "yso")
 print(result)
+}
 }

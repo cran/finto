@@ -20,7 +20,9 @@ A tibble containing the labels (prefLabel, altLabel, hiddenLabel) for the specif
 Get labels for a specific concept from the Finto Skosmos API
 }
 \examples{
+\dontrun{
 lables <- get_concept_labels_vocid(vocid = "yso",
 uri = "http://www.yso.fi/onto/yso/p22922", lang = "fi")
 print(lables)
+}
 }

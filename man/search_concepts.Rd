@@ -48,6 +48,8 @@ A data frame containing search results with columns: \code{uri}, \code{type}, \c
 Search for concepts in the Finto Skosmos API by query term with additional parameters
 }
 \examples{
+\dontrun{
 concepts <- search_concepts(query = "sibelius", lang = "fi")
 print(concepts)
+}
 }

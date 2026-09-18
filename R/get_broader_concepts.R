@@ -8,9 +8,11 @@
 #' @importFrom jsonlite fromJSON
 #' @importFrom tibble tibble
 #' @examples
+#' \dontrun{
 #' conepts <- get_broader_concepts(vocid = "yso",
 #' uri = "http://www.yso.fi/onto/yso/p22922", lang = "fi")
 #' print(conepts)
+#' }
 #' @export
 get_broader_concepts <- function(vocid, uri, lang = NULL) {
   # Construct the base URL for the API request

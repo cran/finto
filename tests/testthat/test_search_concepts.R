@@ -1,4 +1,7 @@
 test_that("search_concepts returns a data frame with expected structure", {
+
+  skip_on_cran()
+
   # Run the function with a real API query
   result <- search_concepts(query = "sibelius", lang = "fi", maxhits = 5)
 
